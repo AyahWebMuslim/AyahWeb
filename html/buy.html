@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إتمام الطلب- AyahWeb</title>
+    <link rel="stylesheet" href="../css/buy.css">
+</head>
+<body>
+ <nav>
+        <img src="../image/AyaWeb_ogo.png" alt="AyahHub Logo">
+        <ul>
+            <li><a href="index.html">الصفحة الرئيسية</a></li>
+            <li><a href="moshaf.html">السور</a></li>
+            <li><a href="product.html">منتجات</a></li>
+            <li><a href="advice.html">نصائح</a></li>
+            <li><a href="ahadith.html">أحاديث</a></li>
+            <li><a href="videos.html">فيديوهات متنوعة</a></li>
+            <li><a href="about-us.html">حول الموقع</a></li>
+        </ul>
+    </nav>
+    <div class="aa">
+        <a href="product.html" class="a">العودة الى المنتجات</a>
+    </div>
+    <div class="container">
+        <h1>إتمام عملية الشراء</h1>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="759c5ea3-96ca-4b21-9af2-dd2675ebd4dd">
+            <input type="hidden" name="subject" value="Nouvelle commande sur AyahWeb !">
+
+            <label>الاسم الكامل</label>
+            <input type="text" name="nom_complet" placeholder="أدخل اسمك الكامل" required>
+
+            <label>رقم الهاتف</label>
+            <input type="tel" name="telephone" placeholder="05xxxxxxxx" required>
+
+            <label>البريد الإلكتروني</label>
+            <input type="email" name="email">
+
+            <label>الولاية</label>
+            <input type="text" name="wilaya" placeholder=" مثال : الجزائر العاصمة">
+
+            <label>عنوان التوصيل</label>
+            <textarea name="adresse" placeholder="أدخل عنوانك بالتفصيل"></textarea>
+            <label>طريقة الدفع</label>
+<select id="paiement" name="mode_paiement">
+    <option value="cod">الدفع عند الاستلام (التوصيل للمنزل)</option>
+    <option value="store">الاستلام من المحل (تأتي بنفسك)</option>
+</select>
+<input type="hidden" name="produits" id="produits">     
+            <button type="submit">تأكيد الطلب</button>
+        </form>
+    </div>
+    <footer>
+  <p>📖 AyahWeb - القرآن الكريم</p>
+    <p>اللهم اجعل هذا العمل خالصًا لوجهك الكريم</p>
+    <p>© 2026 - AyaWeb | All rights reserved</p>
+</footer>
+<script>
+const panier = JSON.parse(localStorage.getItem("panier")) || [];
+
+let texteCommande = "";
+
+panier.forEach((produit, index) => {
+    texteCommande += (index + 1) + ". " + produit.texte + "\n";
+});
+
+document.getElementById("produits").value = texteCommande;
+</script>
+    <script src="../js/chek.js"></script>
+</body>
+</html>

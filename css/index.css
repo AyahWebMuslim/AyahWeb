@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Naskh Arabic';
+}
+
+body{
+    background: linear-gradient(rgba(255,255,255,.50), rgba(255,255,255,.50)), url("../image/bac2.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #1B4332;
+    padding: 10px;
+    direction: rtl;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav{
+    background: linear-gradient(90deg, #1B4332, #14532d);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 30px;
+    margin: 15px;
+    border-radius: 15px;
+    position: sticky;
+    top: 15px;
+    z-index: 9999;
+}
+
+nav img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 3px;
+    border-radius: 6px;
+}
+
+nav ul li a:hover{
+    color: #ffd166;
+    transform: translateY(-8px);
+    transition: 0.3s;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.content h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.text{
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    border: solid #1B4332;
+    box-shadow: 0 7px 20px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.content p{
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    width: 750px;
+    margin: 15px;
+}
+
+.content a{
+    display: inline-block;
+    background: #1B4332;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.content a:hover{
+    transform: translateY(-8px);
+    background: #1B4332;
+    color: #ffd166;
+    transition: 0.3s;
+}
+
+.content img{
+    width: 650px;
+    max-width: 80%;
+    border: #1B4332 solid;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+footer{
+    background: linear-gradient(90deg, #1B4332, #14532d);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 14px;
+    line-height: 1.8;
+    border-radius: 15px;
+}
+
+body.dark-mode {
+    background: linear-gradient(rgba(18, 18, 18, 0.75), rgba(18, 18, 18, 0.75)), url("../image/bac2.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #E0E0E0;
+}
+
+.theme-switch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.theme-switch input[type="checkbox"] {
+    display: none;
+}
+
+.switch-label {
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.switch-label::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50px;
+    transition: transform 0.3s;
+}
+
+.theme-switch input[type="checkbox"]:checked + .switch-label {
+    background-color: #2D6A4F;
+}
+
+.theme-switch input[type="checkbox"]:checked + .switch-label::after {
+    transform: translateX(30px);
+}
+
+.theme-switch .icon {
+    font-size: 24px;
+}
+
+
+body.dark-mode .content h1 {
+    color: #FFFFFF;
+}
+
+body.dark-mode .text {
+    background-color: #1F2937;
+    border-color: #2D6A4F;
+    box-shadow: 0 7px 20px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .content p {
+    color: #D1D5DB;
+}
+
+body.dark-mode .content a {
+    background: #2D6A4F;
+}
+
+body.dark-mode .content a:hover {
+    background: #40916C;
+}
+
+body.dark-mode .content img {
+    border-color: #2D6A4F;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+        margin: 5px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .content {
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .text {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .content p {
+        width: 90%;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .content img {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 15px;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 12px;
+    }
+}

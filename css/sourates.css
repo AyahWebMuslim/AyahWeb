@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Naskh Arabic';
+}
+
+body {
+    background: linear-gradient(rgba(255,255,255,.50), rgba(255,255,255,.50)), url("../image/bac2.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    direction: rtl;
+    color: #2b2b2b;
+    line-height: 1.8;
+    padding: 10px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    background: linear-gradient(rgba(18, 18, 18, 0.75), rgba(18, 18, 18, 0.75)), url("../image/bac2.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #E0E0E0;
+}
+
+nav {
+    background: linear-gradient(90deg, #1B4332, #14532d);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 30px;
+    margin: 15px;
+    border-radius: 15px;
+    position: sticky;
+    top: 15px;
+    z-index: 9999;
+}
+
+nav img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 3px;
+    border-radius: 6px;
+}
+
+nav ul li a:hover{
+    color: #ffd166;
+    transform: translateY(-8px);
+    transition: 0.3s;
+}
+
+.sourate {
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    gap: 20px;
+}
+
+.sourate h1 {
+    color: #0b8457;
+    font-size: 44px;
+    margin-bottom: 20px;
+    grid-area: h1;
+}
+
+body.dark-mode .sourate h1 {
+    color: #40916C;
+}
+
+.sourate h3,.sourate h4 ,.sourate h2{
+    font-size: 25px;
+    color: #5a4636;
+    line-height: 2.2;
+    background-color: white;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 15px;
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode .sourate h3 ,body.dark-mode .sourate h4,body.dark-mode .sourate h2{
+    background-color: #1F2937;
+    color: white;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    margin-top: 20px;
+}
+
+.sourate a {
+    display: inline-block;
+    margin-top: 35px;
+    background-color: #1B4332;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    grid-area: a;
+    transition: 0.3s;
+}
+
+.sourate a:hover {
+    transform: translateY(-8px);
+    background: #1B4332;
+    color: #ffd166;
+}
+.sourate .div {
+  display: none;
+}
+
+.sourate .div.visible {
+  display: block;
+}
+.sourate ul {
+    display: none;
+    list-style: none;
+}
+
+.sourate ul {
+    display: block;
+    background-color: white;
+    border:2px solid #1B4332;
+    border-radius: 12px;
+    margin-top: 30px;
+    padding: 15px;
+}
+.sourate ul li strong{
+    color: #1B4332;
+}
+body.dark-mode .sourate ul {
+    background-color: #1a2228;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #d1d5db;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+body.dark-mode .sourate ul li {
+    padding: 3px 0;
+}
+body.dark-mode .sourate ul li strong {
+    color: #e2b170;
+}
+
+h4{
+    color: #14532d;
+}
+
+body.dark-mode h4{
+    color: #e2b170;
+}
+.history {
+    background-color: white;
+    border:2px solid #1B4332;
+    border-radius: 12px;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+body.dark-mode .history {
+    background-color: #1a2228;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #d1d5db;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+.sourate button{
+    margin-top: 35px;
+    background-color: #1B4332;
+    border: 1px solid #1B4332;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    grid-area: a;
+    transition: 0.3s;
+}
+
+.sourate button:hover {
+    transform: translateY(-8px);
+    background: #1B4332;
+    color: #ffd166;
+}
+
+body.dark-mode .sourate button {
+    background-color: #2D6A4F;
+}
+
+body.dark-mode .sourate button:hover {
+    background-color: #40916C;
+}
+
+body.dark-mode .sourate a {
+    background-color: #2D6A4F;
+}
+
+body.dark-mode .sourate a:hover {
+    background-color: #40916C;
+}
+
+footer {
+    background: linear-gradient(90deg, #1B4332, #14532d);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 14px;
+    line-height: 1.8;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+        margin: 5px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    nav ul li a {
+        font-size: 18px;
+    }
+}

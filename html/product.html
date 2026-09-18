@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منتجات القرآن الكريم- AyahWeb</title>
+    <link rel="stylesheet" href="../css/product.css">
+</head>
+<body>
+ <nav>
+        <img src="../image/AyaWeb_ogo.png" alt="AyahHub Logo">
+        <ul>
+            <li><a href="index.html">الصفحة الرئيسية</a></li>
+            <li><a href="moshaf.html">السور</a></li>
+            <li><a href="advice.html">نصائح</a></li>
+            <li><a href="ahadith.html">أحاديث</a></li>
+            <li><a href="videos.html">فيديوهات متنوعة</a></li>
+            <li><a href="about-us.html">حول الموقع</a></li>
+        </ul>
+    </nav>
+        <div class="search-container">
+        <input type="text" id="searchInput" placeholder="ابحث عن منتج...">
+        <button id="searchButton">بحث</button>
+    </div>
+<ul id="itemList" class="product">
+    <li>
+        <div class="card1">
+            <img src="../image/cauran11.jpg" alt="مصحف">
+            <p class="price">مصحف فاخر مع صندوق<br>1500DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/cauran12.jpg" alt="مصحف">
+            <p class="price">مصحف بنفسجي مميز<br>1100DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/cauran15.jpg" alt="مصحف">
+            <p class="price">مصحف مخملي مطرز<br>1400DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/cauran9.jpg" alt="مصحف">
+            <p class="price">مصحف ازرق غامق <br>1100DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/coran10.jpg" alt="مصحف">
+            <p class="price">مصحف وردي <br>1000DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/cauran16.jpg" alt="مصحف">
+            <p class="price">مجموعة مصاحف دانتيل<br>1250DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/coran.jpg" alt="مصحف">
+            <p class="price">مصحف اسود بنقوشات ذهبية<br>900DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/cauran2.jpg" alt="مصحف">
+            <p class="price">مصحف ذهبي<br> 1200DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/cauran3.jpg" alt="مصحف">
+            <p class="price">مصحف بني<br>850DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/coran4.jpg" alt="مصحف">
+            <p class="price">مصحف اسود بمجوهرات ونقوش<br>1300DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/cauran5.jpg" alt="مصحف">
+            <p class="price">مصحف بالاحكام الملونة<br> 250DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/coran6.jpg" alt="مصحف">
+            <p class="price">مصحف ازرق فاتح <br>1000DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/coran7.jpg" alt="مصحف">
+            <p class="price">مصحف بالون البنفسجي <br>1000DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/coran8.jpg" alt="مصحف">
+            <p class="price">مصحف اخضر بنقوشات ذهبية <br>900DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/cauran13.jpg" alt="مصحف">
+            <p class="price">مصحف أخضر كلاسيكي<br>950DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/cauran17.jpg" alt="مصحف">
+            <p class="price">مصحف أزرق ملكي<br>1050DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/cauran18.jpg" alt="مصحف">
+            <p class="price">مصحف بغلاف داكن مزخرف<br>1150DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/porte.jpg" alt="حامل مصحف">
+            <p class="price">حامل مصحف خشبي كلاسيكي<br>1200DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/porte2.jpg" alt="حامل مصحف">
+            <p class="price">حامل مصحف مزخرف بنقوش<br>1500DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/porte3.jpg" alt="حامل مصحف">
+            <p class="price">حامل مصحف خشبي فاخر<br>1100DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/sbha5.jpg" alt="سبحة">
+            <p class="price">سبحة حجر أسود مع اسم<br>200DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/sbha6.jpg" alt="سبحة">
+            <p class="price">سبحة عقيق يماني<br>250DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/sbha7.jpg" alt="سبحة">
+            <p class="price">سبحة حجر رمادي مع اسم<br>220DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/sbha1.png" alt="">
+            <p class="price">سبحة بلون البرونز <br>100DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/sbha2.jpg" alt="">
+            <p class="price">سبحة خضراء لماعة <br>120DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/sbha3.jpg" alt="">
+            <p class="price">سبحة زرقاء <br>110DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/sbha4.jpg" alt="">
+            <p class="price">سبحة وردية <br>130DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/sbha8.jpg" alt="سبحة">
+            <p class="price">سبحة خشبية بتصميم تقليدي<br>150DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/sbha9.jpg" alt="سبحة">
+            <p class="price">سبحة كريستال شفافة<br>250DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/sbha10.jpg" alt="سبحة">
+            <p class="price">سبحة حجر أسود ملكي<br>300DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/abaya1.jpg" alt="Abaya">
+            <p class="price">عباية أنيقة بتصميم عصري<br>3500DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/abaya2.jpg" alt="Abaya">
+            <p class="price">عباية بيضاء مطرزة<br>3800DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/abaya3.jpg" alt="Abaya">
+            <p class="price">عباية بيضاء بتصميم هادئ<br>3200DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/abaya4.jpg" alt="Abaya">
+            <p class="price">عباية استقبال فاخرة<br>4000DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/abaya5.jpg" alt="Abaya">
+            <p class="price">عباية خفيفة للصيف<br>2900DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/musk1.jpg" alt="مجموعة مسك">
+            <p class="price">مجموعة مسك ختامها مسك<br>6500DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/musk2.jpg" alt="مسك أسود">
+            <p class="price">مسك أسود - Musk Noir<br>1200DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/musk3.jpg" alt="مسك الجسم">
+            <p class="price">مسك الجسم - El Nabil<br>1800DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/musk4.jpg" alt="مسك كوليكشن">
+            <p class="price">مسك كوليكشن - عطر أزرق<br>3200DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/musk5.jpg" alt="طقم مسك">
+            <p class="price">طقم مسك فاخر<br>7500DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/hijab1.jpg" alt="Hijab">
+            <p class="price">حجاب قطني ناعم<br>500DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/hijab2.jpg" alt="Hijab">
+            <p class="price">حجاب بقماش راقي<br>650DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/hijab3.jpg" alt="Hijab">
+            <p class="price">حجاب مطرز يدويًا<br>800DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/hijab5.jpg" alt="Hijab">
+            <p class="price">حجاب بلون هادئ<br>550DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/pack_sajdate.jpg" alt="Pack Tapis">
+            <p class="price">طقم سجادة صلاة مع ملحقات<br>2500DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/sajda1.jpg" alt="Tapis de prière">
+            <p class="price">سجادة صلاة مخملية مطرزة<br>1800DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/sajda2.jpg" alt="Tapis de prière">
+            <p class="price">سجادة صلاة بتصميم كلاسيكي<br>1600DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/sajda3.jpg" alt="Tapis de prière">
+            <p class="price">سجادة صلاة ناعمة (ألوان متعددة)<br>1500DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/pack1.jpg" alt="Pack de prière">
+            <p class="price">طقم صلاة فاخر (وردي)<br>4500DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/pack2.jpg" alt="Pack de prière">
+            <p class="price">طقم صلاة فاخر (داكن)<br>4500DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/sajda4.jpg" alt="Tapis de prière">
+            <p class="price">سجادة صلاة مخملية (زرقاء)<br>1900DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/sajda5.jpg" alt="Tapis de prière">
+            <p class="price">سجادة صلاة بيضاء مزخرفة<br>1700DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/sajda6.jpg" alt="Tapis de prière">
+            <p class="price">سجادة صلاة سوداء مع رسم كعبة<br>2000DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/pack4.jpg" alt="Tapis de prière">
+            <p class="price">ثلاث سجدات متناسقة <br>3500DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+    <li>
+        <div class="card1">
+            <img src="../image/pack5.jpg" alt="Tapis de prière">
+            <p class="price">طقم حجاب مع مصحف<br>2100DA</p>
+            <a href="javascript:void(0);" onclick="ajouterAuPanier(this)">أضف إلى السلة</a>
+        </div>
+    </li>
+</ul>
+    <script src="../js/search.js"></script>
+<footer>
+    <p>📖 AyahWeb - القرآن الكريم</p>
+    <p>اللهم اجعل هذا العمل خالصًا لوجهك الكريم</p>
+    <p>© 2026 - AyahWeb | All rights reserved</p>
+</footer>
+<script src="../js/script.js"></script>
+    <script src="../js/chek.js"></script>
+</body>
+</html>

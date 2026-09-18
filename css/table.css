@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Naskh Arabic';
+}
+
+body {
+    background: linear-gradient(rgba(255,255,255,.50), rgba(255,255,255,.50)), url("../image/bac2.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+nav {
+    background: linear-gradient(90deg, #1B4332, #14532d);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 40px;
+    margin: 15px;
+    border-radius: 15px;
+    position: sticky;
+    top: 15px;
+    z-index: 9999;
+}
+
+nav img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 3px;
+    border-radius: 6px;
+}
+
+nav ul li a:hover{
+    color: #ffd166;
+    transform: translateY(-8px);
+    transition: 0.3s;
+}
+
+h1 {
+    color: #0b8457;
+    margin: 20px 0;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+th {
+    background-color: #1B4332;
+    color: white;
+    padding: 15px;
+    text-align: right;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    color: #444;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-vider, .btn-retour, .btn-buy {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buttons{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn-vider { background-color: #e63946; color: white; }
+.btn-vider:hover { background-color: #c1121f; transform: translateY(-8px);}
+
+.btn-retour { background-color: #6c757d; color: white;}
+.btn-retour:hover { background-color: #495057; transform: translateY(-8px);}
+
+.btn-buy { background-color: #1B4332; color: white; width: 150px; font-size: 18px;}
+.btn-buy:hover { background-color: #14532d; transform: translateY(-8px);}
+
+.theme-switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.theme-switch input {
+    cursor: pointer;
+    width: 40px;
+    height: 20px;
+}
+
+footer {
+    background: linear-gradient(90deg, #1B4332, #14532d);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 14px;
+    line-height: 1.8;
+    border-radius: 15px;
+}
+
+body.dark-mode {
+    background: linear-gradient(rgba(18, 18, 18, 0.75), rgba(18, 18, 18, 0.75)), url("../image/bac2.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #E0E0E0;
+}
+body.dark-mode nav {
+    background: linear-gradient(90deg, #1B4332, #14532d);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 30px;
+    margin: 15px;
+    border-radius: 15px;
+    position: sticky;
+    top: 15px;
+     z-index: 9999;
+}
+
+nav img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 3px;
+    border-radius: 6px;
+}
+
+nav ul li a:hover {
+    color: #ffd166;
+    transition: 0.3s;
+}
+
+.theme-switch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.theme-switch input[type="checkbox"] {
+    display: none;
+}
+
+.switch-label {
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.switch-label::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50px;
+    transition: transform 0.3s;
+}
+
+.theme-switch input[type="checkbox"]:checked + .switch-label {
+    background-color: #2D6A4F;
+}
+
+.theme-switch input[type="checkbox"]:checked + .switch-label::after {
+    transform: translateX(30px);
+}
+
+.theme-switch .icon {
+    font-size: 24px;
+}
+
+
+body.dark-mode h1 {
+    color: #52B788;
+}
+
+body.dark-mode table {
+    background-color: #1F2937;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+body.dark-mode th {
+    background-color: #111827;
+    color: #F3F4F6;
+}
+
+body.dark-mode td {
+    border-bottom: 1px solid #374151;
+    color: #E5E7EB;
+}
+
+body.dark-mode .btn-vider { background-color: #991B1B; }
+body.dark-mode .btn-vider:hover { background-color: #7F1D1D; }
+
+body.dark-mode .btn-retour { background-color: #374151; }
+body.dark-mode .btn-retour:hover { background-color: #4B5563; }
+
+body.dark-mode .btn-buy { background-color: #2D6A4F; }
+body.dark-mode .btn-buy:hover { background-color: #40916C; }
+
+body.dark-mode footer {
+    background: linear-gradient(90deg, #1B4332, #14532d);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 14px;
+    line-height: 1.8;
+    border-radius: 15px;
+}
