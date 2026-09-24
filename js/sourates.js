@@ -18,6 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const Div = document.querySelector(".sourate .div");
 
     button.addEventListener("click", () => {
-      Div.classList.toggle("visible");
+        Div.classList.toggle("visible");
+
+        if (Div.classList.contains("visible")) {
+            button.textContent = "إخفاء الشرح";
+        } else {
+            button.textContent = "إظهار التفسير";
+        }
     });
 });
