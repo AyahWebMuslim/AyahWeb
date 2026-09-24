@@ -12,7 +12,7 @@ element.innerHTML = element.innerHTML.replaceAll(
   element.innerHTML = element.innerHTML.replaceAll(
   "إِلَٰهِ",
   '<span style="color:#c2974b;">إِلَٰهِ</span>');
-  //ul js:
+  // ul js visible :
 document.addEventListener("DOMContentLoaded", () => {
     const button = document.querySelector(".sourate button");
     const Div = document.querySelector(".sourate .div");

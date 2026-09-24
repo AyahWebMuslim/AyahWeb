@@ -112,54 +112,6 @@ body.dark-mode #searchButton:hover {
     border: 2px solid #73592b;
 }
 
-.theme-switch {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin: 20px 0;
-}
-
-.theme-switch input[type="checkbox"] {
-    display: none;
-}
-
-.switch-label {
-    width: 60px;
-    height: 30px;
-    background-color: #ccc;
-    border-radius: 50px;
-    position: relative;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.switch-label::after {
-    content: '';
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 24px;
-    height: 24px;
-    background-color: white;
-    border-radius: 50px;
-    transition: transform 0.3s;
-}
-
-.theme-switch input[type="checkbox"]:checked + .switch-label {
-    background-color: #2D6A4F;
-}
-
-.theme-switch input[type="checkbox"]:checked + .switch-label::after {
-    transform: translateX(30px);
-}
-
-.theme-switch .icon {
-    font-size: 24px;
-}
-
-
 .product {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
